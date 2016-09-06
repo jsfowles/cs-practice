@@ -1,4 +1,5 @@
 using Microsoft.AspNet.Mvc;
+using CharacterSheetApp.Models;
 using System;
 
 namespace CharacterSheetApp.Controllers
@@ -7,7 +8,8 @@ namespace CharacterSheetApp.Controllers
   {
     public IActionResult Index()
     {
-        var name = "Shield";
+      var name = "Shield";
+      
       return View("Index", name);
     }
   }
